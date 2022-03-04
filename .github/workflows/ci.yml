@@ -21,9 +21,7 @@ jobs:
           distribution: full
           variant: ${{ matrix.racket-variant }}
           version: ${{ matrix.racket-version }}
-      - name: Installing test and its dependencies
-        run: raco pkg install --no-docs --auto --name test
-      - name: Compiling test and building its docs
-        run: raco setup --check-pkg-deps --unused-pkg-deps test
-      - name: Testing test
-        run: raco test -x -p test
+      - name: Installing percs and its dependencies
+        run: raco pkg install --no-docs --auto
+      - name: Testing percs
+        run: raco test main.rkt
