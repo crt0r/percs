@@ -6,10 +6,6 @@ This Racket package provides a procedure that calculates a percentage of equalit
 ```bash
 raco pkg install -t git https://gitlab.com/crt0r/percs
 ```
-or
-```bash
-raco pkg install percs
-```
 
 # Example
 ```scheme
